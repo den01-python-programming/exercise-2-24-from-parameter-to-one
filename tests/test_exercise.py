@@ -1,7 +1,7 @@
 import pytest
-from src.exercise import main
+from src.exercise import print_from_number_to_one
 
 def test_exercise(capsys):
-    main()
+    print_from_number_to_one(4)
     out, err = capsys.readouterr()
-    assert out == "\n", "Should read ''"
+    assert out == "4\n3\n2\n1\n", "Should read '4\n3\n2\n1\n'"
